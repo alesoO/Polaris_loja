@@ -1,0 +1,119 @@
+.cabecalho {
+    border-bottom: 1px solid #2DEBA6
+}
+
+.cor_buttons {
+    background-color: #25cf91 !important;
+}
+
+.nav .nav-link.active {
+    background-color: #25cf91;
+    color: white;
+}
+
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+    visibility: hidden;
+    opacity: 1;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    visibility: visible;
+    animation-duration: 1s;
+    transition-timing-function: linear;
+}
+
+.carousel:hover .carousel-control-prev {
+    animation-name: FadeInPrev;
+}
+
+.carousel:hover .carousel-control-next {
+    animation-name: FadeInNext;
+}
+
+@keyframes FadeInPrev {
+    0% {
+        opacity: 0;
+        padding-left: 40px;
+    }
+
+    100% {
+        opacity: 1;
+        padding-left: 0px;
+    }
+}
+
+@keyframes FadeInNext {
+    0% {
+        opacity: 0;
+        padding-right: 40px;
+    }
+
+    100% {
+        opacity: 1;
+        padding-right: 0px;
+    }
+}
+
+.carousel_fundo-gow {
+    padding: 22%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.637)), url("https://static1-br.millenium.gg/articles/2/13/20/2/@/147002-gow-ragnarok-article_cover_bd-1.jpg");
+    position: relative;
+}
+
+.carousel_fundo-cod {
+    padding: 22%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.637)), url("https://imgs.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2-remastered/common/mw2cr-social-share-image.jpg");
+    position: relative;
+}
+
+.carousel_fundo-need {
+    padding: 22%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.637)), url("https://cdn.ome.lt/OjcTwVSBNIDFU3p78EocjNCYpNA=/1200x630/smart/extras/conteudos/need-for-speed-heat_7zA2m8l.jpg");
+    position: relative;
+}
+
+.titulos {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.footer_preto {
+    background-color: black;
+}
+
+.link_texto {
+    color: rgba(255, 255, 255, 0.705);
+}
+
+@media screen and (min-width: 992px) {
+    .header_list {
+        display: flex !important;
+    }
+
+    .header_buttons {
+        margin: 0.3em !important;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .genero {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer_final {
+        padding-left: 0 !important;
+    }
+
+    .footer_content {
+        margin-left: auto;
+    }
+}
